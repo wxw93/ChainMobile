@@ -14,7 +14,7 @@ object ScalikeJDBC {
     })
     // 插入使用的是localTx
     DB.localTx(implicit session=>{
-      SQL("insert into ScalaJDBCTest values(?,?)").bind(820,"Mechail").update.apply()
+      SQL("insert into ScalaJDBCTest values(?,?)").bind(8020,"Mechail").update.apply()
     })
     // 删除使用的也是autoCommit
     DB.autoCommit(implicit session=>{
