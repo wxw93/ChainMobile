@@ -21,7 +21,7 @@ public class KafkaProducers {
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(new File("F:\\sparkData\\CallLog\\mobile.log")));
+            BufferedReader reader = new BufferedReader(new FileReader(new File("F:\\sparkData\\CallLog\\flumeLoggerapp4.log.20170412")));
             String line = null;
             while(null != (line = reader.readLine())){
                 Thread.sleep(100);
